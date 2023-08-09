@@ -18,9 +18,9 @@ Websocket依赖环境配置
 服务器部署
 使用自己的云服务器，将server.js以及watchmoviestogether.js放到云服务器同一目录下，开放server.js中对应端口的TCP连接防火墙。
 操作逻辑与最终实现效果
-首先将watchmoviestogether.js中的内容部署到tampermonkey中，使用ssh连接到云服务器（或其他方式），在server.js所在目录中执行命令node server.js开启监听，如果无法实现监听，表明需要证书，则访问https://yourURL:yourPort获取浏览器信任自签名CA证书即可，若还是无法实现，则需要额外配置证书。
+首先将watchmoviestogether.js中的内容部署到tampermonkey中，使用ssh连接到云服务器（或其他方式），在server.js所在目录中执行命令node server.js开启监听，如果无法实现监听，表明需要证书，则访问https://yourURL:yourPort   获取浏览器信任自签名CA证书即可，若还是无法实现，则需要额外配置证书。
 
-打开适配的网页播放器，本次测试是在Edge浏览器中使用哔哩哔哩网页播放器https://www.bilibili.com，点进去后在右上角扩展栏tampermonkey标志中打开watchmoviestogether脚本，可以看到页面中出现了watchmoviestogether的按钮
+打开适配的网页播放器，本次测试是在Edge浏览器中使用哔哩哔哩网页播放器https://www.bilibili.com， 点进去后在右上角扩展栏tampermonkey标志中打开watchmoviestogether脚本，可以看到页面中出现了watchmoviestogether的按钮
  
 点击该按钮，即可进入到初始版面
 
